@@ -1,0 +1,12 @@
+name: 'Deploying from GitHub'
+on: [push]
+jobs: 
+  run-npm:
+  runs-on: ubuntu-latest
+  steps:
+    - uses: actions/checkout@v3
+    - uses: setup/actions-node@v3
+      with:
+        node-version: '14'
+    - run: npm install
+    - run: npm start
