@@ -27,7 +27,6 @@ jobs:
 
     runs-on:
       - self-hosted
-      - deere-ubuntu-latest
 
     strategy:
       matrix:
