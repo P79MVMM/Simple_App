@@ -62,14 +62,14 @@ function App() {
   
   return (
     <div className="app">
-      <div Key2="header">
-        <img src={logo} Key2="logo" alt="logo" />
+      <div clasName="header">
+        <img src={logo} className="logo" alt="logo" />
       </div>
       <form className="todo-list">
   <ul>
     {todos.map((todo, i) => (
-      <div Key4={`todo ${todo.isCompleted && 'todo-is-completed'}`}>
-      <div Key1={'checkbox'} onClick={() => toggleTodoCompleteAtIndex(i)}>
+      <div className={`todo ${todo.isCompleted && 'todo-is-completed'}`}>
+      <div className={'checkbox'} onClick={() => toggleTodoCompleteAtIndex(i)}>
         {todo.isCompleted && (
           <span>&#x2714;</span>
         )}
