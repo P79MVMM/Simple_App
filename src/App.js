@@ -62,7 +62,7 @@ function App() {
   
   return (
     <div className="app">
-      <div clasName="header">
+      <div className="header">
         <img src={logo} className="logo" alt="logo" />
       </div>
       <form className="todo-list">
