@@ -26,7 +26,8 @@ jobs:
     name: Tests
 
     runs-on:
-      - ubuntu-latest
+      - self-hosted
+      - deere-ubuntu-latest
 
     strategy:
       matrix:
