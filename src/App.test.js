@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import App from './App';
 
 test('renders learn react link', () => {
- const { queryByText } = render(<AddToCart available={false} />);
+ const { queryByText } = render(<App available={false} />);
   expect(queryByText(/learn react/i)).toBeNull()
 });
 //Previous one
