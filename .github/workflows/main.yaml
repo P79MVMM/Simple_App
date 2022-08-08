@@ -59,8 +59,7 @@ jobs:
     name: Trivy Vulnerability Scan
 
     runs-on:
-      - self-hosted
-      - deere-ubuntu-latest
+      - ubuntu-latest
     
     needs:
       - tests
