@@ -107,7 +107,7 @@ jobs:
         run: |
           echo "IS_PUSH_TO_MAIN=${{github.event_name == 'push' &&
                                    github.ref == 'refs/heads/main' &&
-                                   github.repository == 'developer-enablement/java-hello-world'}}" >> $GITHUB_ENV
+                                   github.repository == 'P79MVMM/Simple_App'}}" >> $GITHUB_ENV
       - name: Build Docker Image
         if: ${{ env.IS_PUSH_TO_MAIN && !env.ACT }}
         run: |
