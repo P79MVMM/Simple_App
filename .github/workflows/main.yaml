@@ -19,7 +19,7 @@ on:
       - node_modules
 
 env:
-  DOCKER_REGISTRY: docker.deere.com:6555
+  DOCKER_REGISTRY: docker.deere.com:8080
 
 jobs:
   tests:
